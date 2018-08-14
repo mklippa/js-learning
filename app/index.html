@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>JavaScript</title>
 </head>
+
 <body>
-    <h2>Первая программа на JS</h2>
     <script>
-        var a = 5 + 8;
-        document.write('Результат операции ');
-        document.write(a);
+        var strSum = prompt("Введите сумму вклада", 1000);
+        var strPercent = prompt("Введите процентную ставку", 10);
+        var sum = parseInt(strSum);
+        var percent = parseInt(strPercent);
+        sum = sum + sum * percent / 100;
+        alert("После начисления процентов сумма вклада составит: " + sum);
     </script>
 </body>
+
 </html>
